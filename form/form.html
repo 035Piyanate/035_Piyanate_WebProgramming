@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Form Element</h1>
+    <form action="https://www.example.com/" method="post">
+      <label for="username">Username :</label>
+      <input
+        type="text"
+        name="username"
+        value="" //ขึ้นข้อความหนาที่ลบได้
+        placeholder="Place input username" //ขึ้นคำสั่งจางๆในกล่องข้อความ
+        size="20" //ไซส์กล่องข้อความ
+        maxlength="5" //จำกัดจำนวนตัวอักษร
+      />
+      <br> 
+      <br>
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        name="email"
+        value="" //ขึ้นข้อความหนาที่ลบได้
+        placeholder="Place input email" //ขึ้นคำสั่งจางๆในกล่องข้อความ
+        size="20" //ไซส์กล่องข้อความ 
+      />
+      <br>
+      <br>
+      <label for="password">Password :</label>
+      <input
+        type="password"
+        name="password"
+        value="" //ขึ้นข้อความหนาที่ลบได้
+        placeholder="Place input password" //ขึ้นคำสั่งจางๆในกล่องข้อความ
+        size="30"/>
+      <br><br>
+      <label for="address">Address :</label>
+      <textarea name="address" cols="30" rows="5">ใส่ที่อยู่</textarea>
+      <br>
+      <br>
+      <label for="gender"> Gender :</label>
+      <input type="radio" name="gender" value="1"> Male 
+      <input type="radio" name="gender"> Female
+      <input type="radio" name="gender"> QGPT+
+      <br>
+      <br>
+      <label for="source">Sources :</label>
+      <input type="checkbox"/> friend
+      <input type="checkbox"/> cat
+      <input type="checkbox"/> dog
+      <br>
+      <br>
+      <label for="department">Department</label>
+      <select name="dept">
+        <option value="1">IT</option>
+        <option value="2">อป</option>
+        <option value="3">วิศวะ</option>
+      </select>
+      <br>
+      <br/>
+      <label for="profile">Upload File :</label>
+      <input type="file" name="profile">
+      <br>
+      <br>
+    <input type="submit" value="ลงทะเบียน"/>
+    <input type="reset" value="ยกเลิก">
+    <input type="date">
+    </form>
+  </body>
+</html>
