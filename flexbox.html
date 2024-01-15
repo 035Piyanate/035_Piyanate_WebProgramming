@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container,.container2 {
+        /* กำหนดให้กล่องอยู่ในแถวเดียวกัน */
+        display: flex;
+        /* แนวนอน */
+        flex-direction: row;
+        /* flex-direction: column;  แนวตั้ง*/
+        border: 1px solid red;
+        /* กล่องหน้าชิดซ้ายสุด กล่องหลังชิดขวาสุด*/
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /* เว้นวรรคบรรทัด */
+        margin-bottom: 20px;
+      }
+      .col {
+        width: 30%;
+        border: 1px solid;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      .col2 {
+        width: 50%;
+        border: 1px solid;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+        accusantium nobis architecto suscipit sit placeat doloribus dolorum
+        facere aperiam ratione officia iusto, sint fugit odit reiciendis!
+        Ratione laboriosam odio corporis?
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+        accusantium nobis architecto suscipit sit placeat doloribus dolorum
+        facere aperiam ratione officia iusto, sint fugit odit reiciendis!
+        Ratione laboriosam odio corporis?
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+        accusantium nobis architecto suscipit sit placeat doloribus dolorum
+        facere aperiam ratione officia iusto, sint fugit odit reiciendis!
+        Ratione laboriosam odio corporis?
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+        accusantium nobis architecto suscipit sit placeat doloribus dolorum
+        facere aperiam ratione officia iusto, sint fugit odit reiciendis!
+        Ratione laboriosam odio corporis?
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+        accusantium nobis architecto suscipit sit placeat doloribus dolorum
+        facere aperiam ratione officia iusto, sint fugit odit reiciendis!
+        Ratione laboriosam odio corporis?
+      </div>
+    </div>
+    <div class="container2">
+      <div class="col2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maiores
+        magnam enim distinctio ex molestias adipisci quidem delectus, explicabo,
+        laborum cupiditate magni cum deleniti velit voluptatum dolor iure harum
+        nam.
+      </div>
+      <div class="col2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+        repudiandae hic facilis ad, quo amet minima aut, neque dignissimos
+        beatae dicta harum accusantium! Expedita asperiores cum sit iusto
+        blanditiis veritatis.
+      </div>
+    </div>
+  </body>
+</html>
