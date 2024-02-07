@@ -12,7 +12,7 @@
         };
 
         document.querySelector("#clickme").onclick = function () {
-          document.querySelector("h1").innerHTML = "Goodbye";
+          document.querySelectorAll("h1").innerHTML = "Goodbye";
         };
       });
 
@@ -23,15 +23,10 @@
   </head>
   <body>
     <h1>Hello</h1>
-    <button id="clickme">Click Me</button>
-    
+    <button id="clickme" onclick="goodbye()">Click Me</button>
     <form action="">
-      <p>Username :</p>
+      <p>Name :</p>
       <input type="text" id="name" />
-      <p id="errorUsername" class="error"></p>
-      <p>Password :</p>
-      <input type="password" id="password" />
-      <p di="errorPass" class="error"></p>
       <input type="submit" value="OK" />
     </form>
   </body>
