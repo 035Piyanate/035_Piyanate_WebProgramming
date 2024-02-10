@@ -46,6 +46,14 @@ a{
     border: 1px solid rgba(255, 205, 232, 1);
     background-color: rgba(166, 0, 89, 1);
     margin-top: 30px;
-    width: 1000px;
-    margin-left: 150px;
+}
+.cont{
+    background-color: rgba(209, 0, 113, 1);
+    color: white;
+}
+.contact{
+    margin-left: 20px;
+}
+.icon{
+    margin-left: 30px;
 }
