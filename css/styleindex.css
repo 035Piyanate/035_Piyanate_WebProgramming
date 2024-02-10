@@ -30,6 +30,7 @@ body{
     width: 120px;
     height: 40px;
     border: 1px solid rgba(72, 0, 39, 1);
+    margin-bottom:-50px;
 }
 a{
     color: white;
