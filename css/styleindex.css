@@ -3,22 +3,36 @@ body{
     font-family: 'Itim', cursive;
     background-color: rgba(255, 205, 232, 1);
 }
-.abou{
+.headd{
+    background-color: rgba(243, 0, 131, 1);
+}
+.cId{
     background-color: rgba(209, 0, 113, 1);
+    padding: 15px;
     color: white;
 }
+/* .im{
+    background-color: rgba(166, 0, 89, 1);
+} */
 .wel{
     background-color: rgba(72, 0, 39, 1);
     color: white;
     font-size:medium;
 }
-.ec1{
-    background-color: rgba(166, 0, 89, 1);
-    margin: 1px;
+.ex{
+    background-color: rgba(243, 0, 131, 1);
+    color: white;
 }
-.ec2{
-    background-color: rgba(209, 0, 113, 1);
+.btnn{
+    background-color: rgba(243, 0, 131, 1);
+    border-radius: 20px;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgba(72, 0, 39, 1);
 }
-.ec3{
-    background-color:rgba(243, 0, 131, 1);
+a{
+    color: white;
+    text-decoration:none;
+    font-size: 16px;
 }
