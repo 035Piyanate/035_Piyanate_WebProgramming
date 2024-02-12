@@ -16,63 +16,109 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      // เมื่อหน้าเว็บเพจถูก Load มาครบถ้วน
       document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector("form").onsubmit = function (event) {
-          event.preventDefault(); // Prevent form submission
-          
-          let username = document.querySelector("#username").value;
-          let password = document.querySelector("#password").value;
-          let errorDiv = document.querySelector("#errorUsername");
-          let errorDivv = document.querySelector("#errorPassword");
-          
-          // Check username length
-          let checkusername = username.length > 8;
-          if (!checkusername) {
-            errorDiv.innerHTML = "Username must be at least 8 characters long.";
-            alert("Username must be at least 8 characters long."); // Add alert
-            return false; // Prevent form submission
-          }
-          let checkpassword = password.length > 8;
-          if (!checkpassword) {
-            errorDivv.innerHTML = "Password must be at least 8 characters long.";
-            alert("Password must be at least 8 characters long."); // Add alert
-            return false; // Prevent form submission
-          }
-          errorDiv.innerHTML = "";
-          errorDivv.innerHTML = "";
-          return true;
-        };
+        // เมื่อปุ่ม Submit ถูกกด
+        // document.querySelector("#loginForm").onsubmit() = function(){};
+        document
+          .querySelector("#loginForm")
+          .addEventListener("submit", (event) => {
+            // อ่านค่าจาก textbox
+            let username = document.querySelector("#username").value;
+            let password = document.querySelector("#password").value;
+            // ประกาศตัวแปรเช็คความถูกต้อง ของ username และ password
+            let checkUsername = false;
+            let checkPassword = false;
+ 
+            alert("len username=" + username.length);
+            alert("len password=" + password.length);
+            errorMsg = document.getElementsByClassName("error");
+            // check username
+            if (username.length >= 8) {
+              checkUsername = true;
+              errorMsg[0].style.display="none";
+            }else{
+              errorMsg[0].style.display="block";
+            }
+            // check password
+            if (password.length >= 8) {
+              checkPassword = true;
+              errorMsg[1].style.display="none";
+            }else{
+              errorMsg[1].style.display="block";
+            }
+ 
+            if (checkUsername && checkPassword) {
+              return true;
+            } else {
+              event.preventDefault();
+              return false;
+            }
+          });
       });
-      </script>
+</script>
     <style>
       .error {
+        display: none;
         color: red;
       }
-      .main{
-            margin: 20px auto;
-            width: 600px;
-            border: 3px solid;    
-            padding: 30px;
+      .main {
+        border: 3px solid;
+        padding: 30px;
+      }
+      @media (max-width: 576px) { 
+        .pic{
+          display: none;
         }
+      }
     </style>
   </head>
   <body>
-    <div class="main container-fluid">
-    <h1>Login</h1>
-    <form>
-      <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" >
-        <p id="errorUsername" class="error"></p>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="row my-5">
+        <div class="col-md-6 col-xs-12">
+          <img
+            src="https://img.freepik.com/free-vector/global-data-security-personal-data-security-cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37336.jpg?w=740&t=st=1707722844~exp=1707723444~hmac=92b7d80addc71f326cd652a5083102c88d5611c18046f738ac7f5a31b676e2da"
+            alt=""
+            class="img-fluid pic"
+          />
+        </div>
+        <div class="main col-md-6 col-xs-12">
+          <h1>Login</h1>
+          <form method="post" action="https://www.example.com/" id="loginForm">
+            <div class="input mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" />
+              <p id="errorUsername" class="error">Username must be at least 8 characters</p>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" />
+              <p id="errorPassword" class="error">Password must be at least 8 characters</p>
+            </div>
+            <div class="row">
+              <div class="col-8 mb-3 col-xs-6 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Remember me</label
+                >
+              </div>
+              <div class="col-4 col-xs-6 me-auto mb-3">
+                <a href="#">forget password?</a>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+            <button type="reset" class="btn btn-dark">Reset</button>
+          </form>
+          <div class="text-center">
+            <p class="pt-4">Not a member? <a href="">Register</a></p>
+          </div>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password">
-        <p id="errorPassword" class="error"></p>
-      </div>
-      <button type="submit" class="btn btn-dark">Submit</button>
-      <button type="reset" class="btn btn-dark">Reset</button>
-    </form>
-  </div>
+    </div>
   </body>
 </html>
