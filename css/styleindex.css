@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Kanit&display=swap');
 body{
     font-family: 'Itim', cursive;
-    background-color: rgba(255, 205, 232, 1);
+    background-color: rgb(255, 255, 255);
 }
 .headd{
     background-color: rgba(243, 0, 131, 1);
@@ -23,14 +23,24 @@ body{
     background-color: rgba(243, 0, 131, 1);
     color: white;
 }
+.Ex{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
 .btnn{
-    background-color: rgba(243, 0, 131, 1);
+    color: rgba(166, 0, 89, 1);
+    background-color: rgba(166, 0, 89, 1); 
     border-radius: 20px;
     font-size: 16px;
     width: 120px;
     height: 40px;
-    border: 1px solid rgba(72, 0, 39, 1);
-    margin-bottom:-50px;
+    border: 0px solid rgba(72, 0, 39, 1); 
+    justify-content: space-between;
+    margin-top: -50px;;
 }
 a{
     color: white;
@@ -48,12 +58,19 @@ a{
     margin-top: 30px;
 }
 .cont{
-    background-color: rgba(209, 0, 113, 1);
-    color: white;
+    /* background-color: rgba(209, 0, 113, 1); */
+    color: rgb(2, 0, 0);
 }
-.contact{
-    margin-left: 20px;
+
+.Contact{
+    background-color: white;
 }
-.icon{
-    margin-left: 30px;
+.fa{
+    color: blue;
+}
+.ig{
+    color:rgba(166, 0, 89, 1);
+}
+.hup{
+    color: black;
 }
