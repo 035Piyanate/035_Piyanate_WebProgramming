@@ -4,92 +4,296 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>คุกกี้ช็อคโกแลต</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styleindex.css">
+  <style>
+    .HHH{
+      color: rgb(85, 1, 41);
+      margin-top: 80px;
+    }
+   .bd{
+    background-color: rgb(255, 255, 255);
+   }
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(255, 195, 227);
+  }
+  th, td {
+    border: 1px solid #6f0032;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: rgba(166, 0, 89, 1);
+    color: white;
+    margin-right: 30px;
+  } 
+  .nutrition-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .nutrition-table th, .nutrition-table td {
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .nutrition-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .nutrition-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .nutrition-table tr:hover {
+    background-color: #ddd;
+  }
+
+  .nutrition-table h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .comment-form {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+
+  .comment-form label {
+    font-weight: bold;
+  }
+
+  .comment-form input[type="text"],
+  .comment-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .comment-form input[type="submit"],
+  .comment-form input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(166, 0, 89, 1);
+    color: white;
+    cursor: pointer;
+  }
+
+  .comment-form input[type="submit"]:hover,
+  .comment-form input[type="reset"]:hover {
+    background-color: rgba(166, 0, 89, 1);
+  }
+  </style>
   </head>
   <body>
-    <h1>แจกสูตร ‘คุกกี้ช็อคโกแลต’</h1>
-    <img src="images/cooke.jpg" width="500px" alt="คุกกี้ช็อคโกแลต" />
-    <p>
-      เมนูสุดฮิตอย่าง 'คุกกี้' ที่ไม่ว่าจะผ่านไปกี่ปีก็ไม่มีเบื่อ
-      นอนกินนั่งกินเพลิดเพลินกับขนมชิ้นนี้ได้ทั้งและสามารถทำกินเองที่บ้านได้อีกด้วย
-    </p>
-    <h2>ส่วนผสมคุกกี้ช็อคโกแลต :</h2>
-    <ul>
-      <li>แป้งอเนกประสงค์ 450 กรัม</li>
-      <li>เบคกิ้งโซดา (โซดาไบคาร์บอเนต) 1 ช้อนชา</li>
-      <li>เนยสดชนิดเค็ม 300 กรัม</li>
-      <li>น้ำตาลทรายขาว 250 กรัม</li>
-      <li>ผงฟู 2 ช้อนชา</li>
-      <li>โกโก้ 30 กรัม</li>
-      <li>เกลือ ½ ช้อนชา</li>
-      <li>ไข่ไก่ 1 ฟอง</li>
-    </ul>
-    <h2>วิธีทำคุกกี้ช็อคโกแลต :</h2>
-    <ol>
-      <li>
-        แป้งอเนกประสงค์ ผงฟู เบคกิ้งโซดาร่อนรวมเข้าด้วยกันไว้ ตีเนยสดให้อ่อนตัว
-        เติมน้ำตาลทรายและเกลือลงไปจนหมด
-      </li>
-      <li>
-        ตีด้วยความเร็วสูงจนส่วนผสมที่ได้มีปริมาณเพิ่มขึ้นเป็นสองเท่า
-        เติมไข่ไก่และแป้งที่ร่อนไว้ลงไป ปรับเป็นความเร็วต่ำตีพอเข้ากัน
-      </li>
-      <li>
-        เตรียมถาดสำหรับอบคุกกี้ โดยทาเนยขาวบางๆ ตักคุกกี้เป็นก้อนกลมๆ
-        ให้มีขนาดเท่ากัน วางคุกกี้บนถาดให้ห่างกันประมาณ 1 นิ้ว
-        กดหน้าคุกกี้เล็กน้อย
-      </li>
-      <li>
-        อบที่อุณหภูมิ 160 -170 องศาเซลเซียส นานประมาณ 15 – 20 นาที
-        หรือจนกว่าจะสุก เมื่อขนมสุกแซะวางพักบนตะแกรงจนเย็น
-      </li>
-    </ol>
-    <h2>คุณค่าทางโภชนาของคุกกี้ :</h2>
-    <table border="2">
-      <tr>
-        <th colspan="3">คุณค่าทางโภชนาการต่อหนึ่งหน่วยบริโภค</th>
-      </tr>
-      <tr>
-        <td colspan="2">พลังงานทั้งหมด 449</td>
-        <td>พลังงานจากไขมัน 162</td>
-      </tr>
-      <tr>
-        <td colspan="3"> % ร้อยละของปริมาณที่แนะนำต่อวัน* </td>
-      </tr>
-      <tr>
-        <td>ไขมันทั้งหมด</td>
-        <td>18 g</td>
-        <td>28%</td>
-      </tr>
-      <tr>
-        <td>โซเดียม</td>
-        <td>273 mg</td>
-        <td>12%</td>
-      </tr>
-      <tr>
-        <td>โพแทสเซียม</td>
-        <td>175 mg</td>
-        <td>5%</td>
-      </tr>
-      <tr>
-        <td>คาร์โบไฮเดรต</td>
-        <td>69.9g</td>
-        <td>24%</td>
-      </tr>
-      <tr>
-        <td>โปรตีน</td>
-        <td>4.8g</td>
-        <td>10%</td>
-      </tr>
-    </table>
-    <h2> COMMENT</h2>
-  <label for="username">Topics : </label>
-  <input type="text" name="Topic"">
-  <br><br>
-  <label for="comment">Comment : </label>
-  <textarea name="Comment" cols="30" rows="10"></textarea>
-  <br><br>
-  <input type="submit" value="submit">
-  <input type="reset" value="clear">
+    <!-- หัวเว็บ -->
+    <div class="headd border-bottom :2px solid white">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid py-1">
+          <a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gift ms-4" viewBox="0 0 16 16">
+            <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
+          </svg></a>
+          <a class="web navbar-brand ms-3" href="index.html"> 934-206 Web Programming</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: white;" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: white;" aria-current="page" href="index.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: white;" aria-current="page" href="index.html">Exercise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: white;" aria-current="page" href="index.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: white;" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- ส่วนเนื้อหา -->
+    <div class="bd container-fluid">
+      <h1 class="HHH text-center py-3">แจกสูตร ‘คุกกี้ช็อคโกแลต’</h1>
+    <div class="aboutme card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/cooke.jpg" class="img-fluid rounded-start" id="About_me" width="500px">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h4 class="card-text ms-4"><p>
+              เมนูสุดฮิตอย่าง 'คุกกี้' ที่ไม่ว่าจะผ่านไปกี่ปีก็ไม่มีเบื่อ
+              นอนกินนั่งกินเพลิดเพลินกับขนมชิ้นนี้ได้ทั้งและสามารถทำกินเองที่บ้านได้อีกด้วย
+            </p></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center py-3 pb-4">
+      <h2>ส่วนผสมคุกกี้ช็อคโกแลต :</h2>
+<table>
+  <tr>
+    <th>ส่วนผสม</th>
+    <th>ปริมาณ</th>
+  </tr>
+  <tr>
+    <td>แป้งอเนกประสงค์</td>
+    <td>450 กรัม</td>
+  </tr>
+  <tr>
+    <td>เบคกิ้งโซดา (โซดาไบคาร์บอเนต)</td>
+    <td>1 ช้อนชา</td>
+  </tr>
+  <tr>
+    <td>เนยสดชนิดเค็ม</td>
+    <td>300 กรัม</td>
+  </tr>
+  <tr>
+    <td>น้ำตาลทรายขาว</td>
+    <td>250 กรัม</td>
+  </tr>
+  <tr>
+    <td>ผงฟู</td>
+    <td>2 ช้อนชา</td>
+  </tr>
+  <tr>
+    <td>โกโก้</td>
+    <td>30 กรัม</td>
+  </tr>
+  <tr>
+    <td>เกลือ</td>
+    <td>½ ช้อนชา</td>
+  </tr>
+  <tr>
+    <td>ไข่ไก่</td>
+    <td>1 ฟอง</td>
+  </tr>
+</table>
+    </div>
+    <div class="container-fluid text-align px-3 py-3">
+      <h2>วิธีทำคุกกี้ช็อคโกแลต </h2>
+<ol>
+  <li>
+    แป้งอเนกประสงค์ ผงฟู เบคกิ้งโซดาร่อนรวมเข้าด้วยกันไว้ ตีเนยสดให้อ่อนตัว เติมน้ำตาลทรายและเกลือลงไปจนหมด
+  </li>
+  <li>
+    ตีด้วยความเร็วสูงจนส่วนผสมที่ได้มีปริมาณเพิ่มขึ้นเป็นสองเท่า เติมไข่ไก่และแป้งที่ร่อนไว้ลงไป ปรับเป็นความเร็วต่ำตีพอเข้ากัน
+  </li>
+  <li>
+    เตรียมถาดสำหรับอบคุกกี้ โดยทาเนยขาวบางๆ ตักคุกกี้เป็นก้อนกลมๆ ให้มีขนาดเท่ากัน วางคุกกี้บนถาดให้ห่างกันประมาณ 1 นิ้ว กดหน้าคุกกี้เล็กน้อย
+  </li>
+  <li>
+    อบที่อุณหภูมิ 160 -170 องศาเซลเซียส นานประมาณ 15 – 20 นาที หรือจนกว่าจะสุก เมื่อขนมสุกแซะวางพักบนตะแกรงจนเย็น
+  </li>
+</ol>
+    </div>
+    <div>
+      <table class="nutrition-table " border="2">
+        <h1 class="text-center">คุณค่าทางโภชนาการของคุกกี้</h1>
+        <tr>
+          <th colspan="3" style="color: #ffffff;background-color: #6f0032;">คุณค่าทางโภชนาการต่อหนึ่งหน่วยบริโภค</th>
+        </tr>
+        <tr>
+          <td colspan="2">พลังงานทั้งหมด 449</td>
+          <td>พลังงานจากไขมัน 162</td>
+        </tr>
+        <tr>
+          <td colspan="3"> % ร้อยละของปริมาณที่แนะนำต่อวัน* </td>
+        </tr>
+        <tr>
+          <td>ไขมันทั้งหมด</td>
+          <td>18 g</td>
+          <td>28%</td>
+        </tr>
+        <tr>
+          <td>โซเดียม</td>
+          <td>273 mg</td>
+          <td>12%</td>
+        </tr>
+        <tr>
+          <td>โพแทสเซียม</td>
+          <td>175 mg</td>
+          <td>5%</td>
+        </tr>
+        <tr>
+          <td>คาร์โบไฮเดรต</td>
+          <td>69.9g</td>
+          <td>24%</td>
+        </tr>
+        <tr>
+          <td>โปรตีน</td>
+          <td>4.8g</td>
+          <td>10%</td>
+        </tr>
+      </table>
+    </div>
+    <div class="container-fluid mt-5">
+      <div class="comment-form">
+        <h2>COMMENT</h2>
+        <form action="">
+          <label for="username">Topics :</label><br>
+          <input type="text" id="topic" name="topic"><br><br>
+          <label for="comment">Comment :</label><br>
+          <textarea id="comment" name="comment" cols="30" rows="10"></textarea><br><br>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Clear">
+        </form>
+      </div>
+    </div>
+    </div>
+    <!-- ท้ายเว็บ -->
+    <div>
+      <div class="cont row">
+        <div class="contact col-6 col-sm-12 py-4">
+          <h1 style="color: white;" class="ms-4">Contact </h1>
+          <div class="icon pt-3 ms-5">
+            <a href="https://www.facebook.com/Piyanate77.metakekay?mibextid=2JQ9oc" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook mx-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+              </svg></a>
+            <a href="https://www.instagram.com/gp_giftz/?igsh=YnliZjlldXBraTN1&utm_source=qr" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram mx-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+              </svg></a>
+            <a href="https://github.com/035Piyanate/035_Piyanate_WebProgramming.git"><svg
+                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github mx-2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
   
