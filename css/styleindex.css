@@ -18,6 +18,12 @@ h1{
         display: none;
     }
 }
+@media (max-width: 430px){
+    .hup{
+        margin-top: 15px;
+    }
+}
+
     .navbar-toggler{
         background-color:  rgba(72, 0, 39, 1);
         border: 1px solid white;
