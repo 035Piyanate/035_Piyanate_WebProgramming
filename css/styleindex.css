@@ -3,25 +3,23 @@ body{
     font-family: 'Itim', cursive;
     background-color: rgba(72, 0, 39, 1);
 }
-.bgimg {
-    position: relative;
-    background-position: center;
-    background-size: cover;
-}
+
 h1{
     font-size: 42px;
 }
-
+@media (max-width: 576px) { 
+    .bgimg::before{
+      display: none;
+    }}
 .bgimg::before {
     content: "";
     position: absolute;
+    background-position: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/images/รูปก1.jpg');
-    background-size: cover;
-    filter: brightness(30%);
+    background-image: url('/images/พื้นหลังกิ๊ฟ.png');
     z-index: -1;
 }
 .headd {
