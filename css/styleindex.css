@@ -14,6 +14,9 @@ h1{
     .gift{
         display: none;
     }
+    .gift_end{
+        display: none;
+    }
 }
     .navbar-toggler{
         background-color:  rgba(72, 0, 39, 1);
@@ -122,4 +125,12 @@ a{
 }
 .hup{
     color: rgb(255, 255, 255);
+}
+.form{
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.bt{
+    border-radius: 5px;
+    background-color: rgb(255, 159, 196); 
 }
