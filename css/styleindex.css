@@ -10,7 +10,15 @@ h1{
 @media (max-width: 576px) { 
     .bgimg::before{
       display: none;
-    }}
+    }
+    .gift{
+        display: none;
+    }
+}
+    .navbar-toggler{
+        background-color:  rgba(72, 0, 39, 1);
+        border: 1px solid white;
+    }
 .bgimg::before {
     content: "";
     position: absolute;
@@ -32,7 +40,8 @@ h1{
 }
 
 .web{
-    padding: 15px;
+    /* padding: 15px; */
+    margin-right: auto;
     color: white;
 }
 /* wel */
@@ -82,7 +91,7 @@ a{
 
 }
 .card-footer{
-    background-color: rgba(166, 0, 89, 1) 
+    background-color: rgba(166, 0, 89, 1) ;
 }
 .card-footer {
     display: none;
